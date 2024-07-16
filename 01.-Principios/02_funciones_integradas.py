@@ -96,6 +96,7 @@ print(persona.__dict__) #Me muestra el diccionario de persona
 delattr(persona,'nat') #Elimina de mi diccionario la propiedad nat
 print(persona.__dict__)
 
+<<<<<<< HEAD
 class Persona:
     def __init__(self, nombre, edad):
         self.nombre = nombre
@@ -109,4 +110,6 @@ juan = Persona("Juan", 30)
 
 # Mostrar los nombres de atributos y métodos de la instancia juan
 print(dir(juan))
+=======
+>>>>>>> 5aa36ef (function study)
 
