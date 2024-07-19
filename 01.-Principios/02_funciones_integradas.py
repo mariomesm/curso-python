@@ -96,17 +96,42 @@ print(persona.__dict__) #Me muestra el diccionario de persona
 delattr(persona,'nat') #Elimina de mi diccionario la propiedad nat
 print(persona.__dict__)
 
-class Persona:
-    def __init__(self, nombre, edad):
-        self.nombre = nombre
-        self.edad = edad
+#divmod toma dos numeros (dividendo,divisor) devuelve una tupla
 
-    def saludar(self):
-        print(f"Hola, soy {self.nombre} y tengo {self.edad} años.")
+print(divmod(10,3))
+print(divmod(-10,3)) #con valores negativos la regla de redondeo es hacia abajo valor(-4,2)
+'''
+El cociente de -10 // 3 es -4 porque -10/3 da -3.333 y al redondear hacia abajo se obtiene -4
+El resto es 2 porque -4 * 3 +2 = -10 que es el valor que estamos pasando como dividiendo
+'''
+print(divmod(10.5,3.2)) #(3.0,0.89) 3*3.2+.89 = 10.5
 
-# Crear una instancia de Persona
-juan = Persona("Juan", 30)
+"""
+enumerate devuelve un objeto enumerado que es un iterador que nos permite recorrer una secuencia de valores
+pero no podemos acceder directamente como una lista, por lo cual utilizamos list()
+"""
+lista = ['spring','summer','fall','winter']
+print(list(enumerate(lista)))
 
-# Mostrar los nombres de atributos y métodos de la instancia juan
-print(dir(juan))
+for index,li in enumerate(lista):
+    print(f"indice:{index} valor:{li}")
 
+#eval() evalua una cadena y regresa un resultado
+
+cadena_numeros = '10 + 15 * 3'
+nuevo_array ='[10,45,12,5]'
+print(f"el resultado es: {eval(cadena_numeros)}")
+print(f"el resultado es: {eval(nuevo_array)}")
+
+#filter()
+
+valores = ['sol','luna','estrella','cielo','mar']
+def list_cadena(list):
+    return len(list) > 3
+caracter_tres = filter(list_cadena,valores)
+print(list(caracter_tres))
+
+dict_ejemplo = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+claves_valores = filter(lambda item:item[1]>2, dict_ejemplo.items())
+dict_filtrado = {k:v for k, v in claves_valores}
+print(dict_filtrado)
