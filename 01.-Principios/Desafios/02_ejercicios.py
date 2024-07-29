@@ -10,7 +10,7 @@ Declarar una variable de edad y asignarle un valor
 Declarar una variable de año y asignarle un valor
 
 '''
-comment = 'python'
+comment = 'Python'
 first_name = 'Mario '
 last_name = 'Martinez'
 name = first_name + last_name
@@ -29,9 +29,9 @@ print(type(age)) #int
 print(type(anio)) #int
 print(type(is_married)) #booolean
 
-#2.-Usando la función incorporada len() , encuentre la longitud de su nombre
+#2.-Usando la función incorporada len(), encuentre la longitud de su nombre
 
-print(f"La longitud de el nombre es: {len(name)}")
+print(f"La longitud del nombre es: {len(name)}")
 
 #3.-Compara la longitud de tu nombre y tu apellido
 

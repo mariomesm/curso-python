@@ -16,7 +16,7 @@ numerical_values()
 def string_text():
     print('Mario')
     print('Martinez')
-    print('Mexico')
+    print('México')
     print('Aprendiendo python')
 
 string_text()
@@ -31,11 +31,11 @@ def type_data():
     print(type(3.14))
     print(type(4-4j))
     print(type(['Asabeneh','Python','Finlandia']))
-    print(type({'nombre':'Mario','apellido':'Martinez','pais':'Mexico'}))
+    print(type({'nombre':'Mario','apellido':'Martinez','pais':'México'}))
 
 type_data()
 
-#Calcular la distancia euclidienne donde (3,1) (8,10)
+#Calcular la distancia euclidiana donde (3,1) (8,10)
 
 def distance_euclidean(q1,q2,p1,p2):
     result = math.sqrt((q1-q2)**2+(p1-p2)**2)

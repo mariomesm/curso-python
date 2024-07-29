@@ -1,16 +1,16 @@
 #comentario en python 
 """
-Comentario con mas de 
-una linea 
+Comentario con más de 
+una línea 
 """
 '''
 Otra forma de hacer un comentario de 
-mas de una linea
+más de una línea
 '''
 
 print('Hola mundo')
 
-#cunsultar los tipo de datos con type
+#Consultar el tipo de dato con type
 
 print(type(10))
 print(type(3.1))

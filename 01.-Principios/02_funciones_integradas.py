@@ -21,18 +21,18 @@ def any(iterable):
     return False
 
 print(any([None,False,0])) #Debería de imprimir False
-print(any([True,1,True]))#Deberia de imprimir True
+print(any([True,1,True]))#Debería de imprimir True
 
 #bin()
 
 print(bin(10))
 print(bin(100))
-print(format(10,'b')) #con format puedo quitar el valor de 0b colocando el valor de 'b'
+print(format(10,'b')) #Con format puedo quitar el valor de 0b colocando el valor de 'b'
 
 #bool
 
-print(bool([])) #Debera de mostrar un valor falso
-print(bool(1)) #deberia de mostrar true
+print(bool([])) #Deberá de mostrar un valor falso
+print(bool(1)) #Debería de mostrar true
 
 #breakpoint()
 '''
@@ -55,7 +55,7 @@ print(data)
 data[2] = 80
 print(data)
 
-#bytes  no se puede modificar su resultado como bytearray
+#bytes no se puede modificar su resultado como bytearray
 
 data = bytes([65,66,67])
 print(data) #Muestra 'ABC' 
@@ -71,15 +71,15 @@ def call_a_function(obj):
     else:
         print('No es un callable')
 
-call_a_function(my_function) #Muestra lo que imprime mi funcion my_function
+call_a_function(my_function) #Muestra lo que imprime mi function my_function
 call_a_function(10) #Muestra el mensaje no es un callable
         
-#chr convierte un  codigo unicode en su caracter correspondiente 
+#chr convierte un  código unicode en su carácter correspondiente 
 
 print(chr(100))
 print(chr(8364))
 
-#complex un número complejo consta de una parte imaginaria y una real donde los numeros son numeros reales y j la parte imaginaria
+#complex un número complejo consta de una parte imaginaria y una real donde los números son números reales y j la parte imaginaria
 
 print(complex(3,4)) #muestra 3+4j
 print(1+2j)
@@ -96,10 +96,10 @@ print(persona.__dict__) #Me muestra el diccionario de persona
 delattr(persona,'nat') #Elimina de mi diccionario la propiedad nat
 print(persona.__dict__)
 
-#divmod toma dos numeros (dividendo,divisor) devuelve una tupla
+#divmod toma dos números (dividendo,divisor) devuelve una tupla
 
 print(divmod(10,3))
-print(divmod(-10,3)) #con valores negativos la regla de redondeo es hacia abajo valor(-4,2)
+print(divmod(-10,3)) #Con valores negativos la regla de redondeo es hacia abajo valor(-4,2)
 '''
 El cociente de -10 // 3 es -4 porque -10/3 da -3.333 y al redondear hacia abajo se obtiene -4
 El resto es 2 porque -4 * 3 +2 = -10 que es el valor que estamos pasando como dividiendo
@@ -116,7 +116,7 @@ print(list(enumerate(lista)))
 for index,li in enumerate(lista):
     print(f"indice:{index} valor:{li}")
 
-#eval() evalua una cadena y regresa un resultado
+#eval() evalúa una cadena y regresa un resultado
 
 cadena_numeros = '10 + 15 * 3'
 nuevo_array ='[10,45,12,5]'
